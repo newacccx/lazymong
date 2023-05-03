@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('📥 Join BackUp Channel 📥', url=f'https://t.me/Movies')
+                InlineKeyboardButton('📥 Join BackUp Channel 📥', url=f'https://t.me/HDCINEMA_1')
             ],
             [
-                InlineKeyboardButton('⚡ Movie Updates ⚡', url=f'https://t.me/Letest_All_Type_M'),
+                InlineKeyboardButton('⚡ Movie Updates ⚡', url=f'https://t.me/HDCINEMA_1'),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -241,7 +241,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('📥 Join BackUp Channel 📥', url='https://t.me/Movies')] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('📥 Join BackUp Channel 📥', url='https://t.me/HDCINEMA_1')] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
